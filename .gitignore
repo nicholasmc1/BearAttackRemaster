@@ -5,5 +5,5 @@
 *.meta
 !*.*.meta
 *.gp4
-/Source/
+/OldSource/
 *.ini
