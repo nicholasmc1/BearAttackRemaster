@@ -13,10 +13,13 @@ ModelImporter:
     400004: //RootNode
     2300000: Sun_Inner
     2300002: Sun_Outer
+    2300004: //RootNode
     3300000: Sun_Inner
     3300002: Sun_Outer
+    3300004: //RootNode
     4300000: Sun_Inner
     4300002: Sun_Outer
+    4300004: mesh_SunOuter
     7400000: Take 001
     9500000: //RootNode
   materials:
