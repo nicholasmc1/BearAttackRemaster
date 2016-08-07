@@ -9,7 +9,7 @@ public class spookytext : MonoBehaviour {
 
 	private Rect _rect;
 
-	private int _count;
+	//private int _count;
 
 	// Use this for initialization
 	void Start () {
@@ -28,7 +28,7 @@ public class spookytext : MonoBehaviour {
 	void NewRect()
 	{
 		_rect = new Rect(0,0, 500, 500);
-		_count = 0;
+		//_count = 0;
 	}
 
 	void OnGUI() {

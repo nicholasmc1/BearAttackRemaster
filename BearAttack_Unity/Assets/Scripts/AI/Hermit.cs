@@ -207,7 +207,7 @@ public class Hermit : MonoBehaviour {
 			return;
 		}
 
-		Vector3 toTree = (_treeToProtect.transform.position - transform.position);
+		//Vector3 toTree = (_treeToProtect.transform.position - transform.position);
 		//print(toTree.magnitude);
 
 		/*if(toTree.magnitude < 1.5f)

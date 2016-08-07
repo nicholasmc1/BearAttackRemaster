@@ -10,7 +10,7 @@ public class Footsteps : MonoBehaviour {
 	public float footstepGap;	
 	public bool footstepsEnabled = true;
 
-	private bool canPlayRoll = true;
+	//private bool canPlayRoll = true;
 
 	public float runningGap;
 	public float walkingGap;

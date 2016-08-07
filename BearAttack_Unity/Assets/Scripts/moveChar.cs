@@ -32,7 +32,8 @@ public class moveChar : MonoBehaviour
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-		Screen.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 		
 		// if bear is alive
 		if(GetComponent<bearHealth>().health > 0)

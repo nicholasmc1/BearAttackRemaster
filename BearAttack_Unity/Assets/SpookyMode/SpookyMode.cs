@@ -11,7 +11,8 @@ public class SpookyMode : MonoBehaviour {
 	void Start () {
 		//Hermit.spookyModeOn = true;
 
-		Screen.lockCursor = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 	}
 	
 	// Update is called once per frame
