@@ -27,7 +27,7 @@ public class Shit : MonoBehaviour {
 	IEnumerator DoAShit()
 	{
         health.shit = 0;
-        anims.playAnim("poop", .05f, 2f);
+        anims.playAnim("poop", 0, 2f);
 
 		yield return new WaitForSeconds(0.15f);
 

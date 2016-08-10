@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 33: {fileID: 3300002}
   - 23: {fileID: 2300000}
-  - 135: {fileID: 135000010560295470}
+  - 65: {fileID: 65000010158436672}
   m_Layer: 14
   m_Name: Mesh
   m_TagString: Untagged
@@ -123,8 +123,8 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100000}
   m_IsPrefabParent: 1
---- !u!135 &135000010560295470
-SphereCollider:
+--- !u!65 &65000010158436672
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -133,5 +133,5 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.8971072
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0.00000002980232, y: -3.8488068e-15, z: 0.5416714}
