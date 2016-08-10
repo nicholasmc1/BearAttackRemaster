@@ -35,10 +35,10 @@ public class bearHealth : MonoBehaviour
 			return;
 
 		// Decreases the health slowly over time
-		health -= .1f;
+		//health -= .1f;
 		
 		// Health decreases faster if bear is moving
-		health -= GetComponent<Rigidbody>().velocity.magnitude * .01f;
+		//health -= GetComponent<Rigidbody>().velocity.magnitude * .01f;
 		
 		if(health > 300)	
 		{

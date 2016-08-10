@@ -68,12 +68,11 @@ public class animate : MonoBehaviour {
 		if(anim.GetBool(paramName) != true)
 		{
 			anim.speed = animSpeed;
-	        anim.SetBool( paramName, true );
+            anim.SetTrigger(paramName);
 			animPlaying = true;
 	
 	        yield return new WaitForSeconds(waitTime);
 
-	        anim.SetBool( paramName, false );
 			animPlaying = false;
 		}
 

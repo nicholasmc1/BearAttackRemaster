@@ -39,7 +39,7 @@ public class Eat : MonoBehaviour {
 			{
 				Destroy(Instantiate(bloodParticle, col.transform.position, col.transform.rotation), 2f);
 				
-				GameObject.Find("Bear_Object").GetComponent<animate>().playAnim("attacking", .1f,.4f);
+				GameObject.Find("Bear_Object").GetComponent<animate>().playAnim("attack", .1f,.4f);
 				
 				GetComponent<bearHealth>().health += 50;
 				GetComponent<bearHealth>().shit += 20;

@@ -5,28 +5,35 @@ public class Shit : MonoBehaviour {
 
 	public GameObject shitPrefab;
 	public AudioSource shitSound;
+    public Transform ass;
+    private bool canShit = true;
+    private bearHealth health;
+    private animate anims;
 	// Update is called once per frame
+    void Start()
+    {
+        health = GetComponent<bearHealth>();
+        anims = GetComponentInChildren<animate>();
+    }
 	void Update ()
 	{
-		if(transform.parent.parent.GetComponent<bearHealth>().shit >= 100)
-		{
-			if(Input.GetKey(KeyCode.Space))
-			{
-				StartCoroutine(DoAShit());
-			}
-		}
+        if (canShit && Input.GetKey(KeyCode.Space))
+        {
+            canShit = false;
+            StartCoroutine(DoAShit());
+        }
 	}
 
 	IEnumerator DoAShit()
 	{
-		transform.parent.parent.GetComponent<bearHealth>().shit = 0;
+        health.shit = 0;
+        anims.playAnim("poop", .05f, 2f);
 
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.15f);
 
 		shitSound.Play();
-		GameObject.Find("Bear_Object").GetComponent<animate>().playAnim("pooping", .05f,2f);
-		
-		GameObject temp = Instantiate(shitPrefab, transform.position, Quaternion.identity) as GameObject;
-		temp.GetComponent<Rigidbody>().AddForce(transform.forward * 400);
+        GameObject temp = Instantiate(shitPrefab, ass.position, Quaternion.identity) as GameObject;
+        temp.GetComponent<Rigidbody>().AddForce(ass.forward * 400);
+        canShit = true;
 	}
 }
