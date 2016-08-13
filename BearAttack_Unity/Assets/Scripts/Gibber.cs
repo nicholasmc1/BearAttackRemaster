@@ -25,8 +25,9 @@ public class Gibber : MonoBehaviour
     public void SmashEm(Vector3 _velocity)
     {
 
-        GetComponent<AudioSource>().Play();
-
+        _killSource.Play();
+        if (isHunter)
+            _slowMoSource.Play();
         GameObject temp = Instantiate(Gibs, transform.position, transform.rotation) as GameObject;
 
         foreach (Transform child in temp.transform)

@@ -30,6 +30,9 @@ public class Logger : MonoBehaviour {
 	private bool _chopping = false;
 
 
+    //audio
+    public AudioClip deforestSound;
+    private AudioSource cutTreeSource;
 
 	// Use this for initialization
 	void Start () {
@@ -42,6 +45,10 @@ public class Logger : MonoBehaviour {
 		_wayPoint = toBear.normalized;
 
 		_anim = GetComponentInChildren<Animator>();
+
+        cutTreeSource = gameObject.AddComponent<AudioSource>();
+        cutTreeSource.clip = deforestSound;
+        cutTreeSource.spatialBlend = 1;
 
 	}
 	
@@ -180,13 +187,13 @@ public class Logger : MonoBehaviour {
 
 		if(_treeToLog != null)
 		{
-			GetComponent<AudioSource>().Play();
+            cutTreeSource.Play();
 			//chop tree, deforest land
 			GameObject treeLand = _treeToLog.transform.parent.gameObject;
 			GameObject temp = Instantiate(deforestPrefab, treeLand.transform.position, Quaternion.identity) as GameObject;
-			temp.transform.FindChild("stump").transform.position = treeLand.transform.FindChild("Tree").transform.position;
-			temp.transform.FindChild("stump").transform.rotation = treeLand.transform.FindChild("Tree").transform.rotation;
-			temp.transform.FindChild("stump").transform.localScale = treeLand.transform.FindChild("Tree").transform.localScale*15;
+			//temp.transform.FindChild("stump").transform.position = treeLand.transform.FindChild("Tree").transform.position;
+			//temp.transform.FindChild("stump").transform.rotation = treeLand.transform.FindChild("Tree").transform.rotation;
+			//temp.transform.FindChild("stump").transform.localScale = treeLand.transform.FindChild("Tree").transform.localScale*15;
 			Destroy(treeLand);
 		}
 

@@ -20,7 +20,7 @@ Material:
       second:
         m_Texture: {fileID: 2800000, guid: befd828d0bc7d804c8fe9c60dff379f1, type: 3}
         m_Scale: {x: 0.5, y: 0.5}
-        m_Offset: {x: 0.5, y: 0.5}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
         name: _InvFade
