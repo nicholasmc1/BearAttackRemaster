@@ -60,7 +60,8 @@ ModelImporter:
     7400008: anim_BearAttack
     7400010: anim_BearDie
     7400012: anim_BearDead
-    7400014: ' anim_BearTurnLeft'
+    7400014: anim_BearTurnLeft
+    7400016: anim_BearTurnRight
     9500000: //RootNode
     13700000: Bear
     13700002: mesh_Bear
@@ -590,7 +591,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: ' anim_BearTurnLeft'
+      name: anim_BearTurnLeft
       takeName: Take 001
       firstFrame: 411
       lastFrame: 414
@@ -601,7 +602,79 @@ ModelImporter:
       loop: 0
       hasAdditiveReferencePose: 0
       loopTime: 1
-      loopBlend: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Rear_Pelvis_L
+        weight: 1
+      - path: Hip/Rear_Pelvis_L/Rear_UpperLeg_L
+        weight: 1
+      - path: Hip/Rear_Pelvis_L/Rear_UpperLeg_L/Rear_LowerLeg_L
+        weight: 1
+      - path: Hip/Rear_Pelvis_R
+        weight: 1
+      - path: Hip/Rear_Pelvis_R/Rear_UpperLeg_R
+        weight: 1
+      - path: Hip/Rear_Pelvis_R/Rear_UpperLeg_R/Rear_LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L/Front_UpperLeg_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L/Front_UpperLeg_L/Front_LowerLeg_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R/Front_UpperLeg_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R/Front_UpperLeg_R/Front_LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Jaw
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Jaw/Mouth
+        weight: 1
+      - path: mesh_Bear
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_BearTurnRight
+      takeName: Take 001
+      firstFrame: 421
+      lastFrame: 424
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

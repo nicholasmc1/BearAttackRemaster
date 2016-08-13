@@ -16,7 +16,7 @@ public class Hunter : MonoBehaviour {
 	private Vector3 _wayPoint;
 	public float seekRadius = 10;
 	private float _wanderTimer = 0;
-
+    private Rigidbody myRigid;
 
 	//shooting
 	public float firingDist = 8;
@@ -24,19 +24,26 @@ public class Hunter : MonoBehaviour {
 	public GameObject firingArc;
 	public GameObject gunParticle;
 	public Transform particleTrans;
-
+    
+    //audio
+    public AudioClip shootSound;
+    private AudioSource shootSource;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () 
+    {
 		_player = GameObject.Find("Player");
 
 		myState = HunterState.Wander;
 		Redirect(); 
 
-
 		_anim = GetComponentInChildren<Animator>();
 
 		firingArc.GetComponent<Renderer>().enabled = false;
+        shootSource = gameObject.AddComponent<AudioSource>();
+        shootSource.clip = shootSound;
+        shootSource.spatialBlend = 1;
+        myRigid = gameObject.GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -50,7 +57,7 @@ public class Hunter : MonoBehaviour {
 			case HunterState.Wander:
 				//wander around and find a bear
 				Wander();
-				GetComponent<Rigidbody>().velocity = _wayPoint * speed/2f;
+                myRigid.velocity = _wayPoint * speed / 2f;
 				SeekBear();
 				//
 				break;
@@ -70,7 +77,7 @@ public class Hunter : MonoBehaviour {
 
 		
 		transform.LookAt(transform.position + _wayPoint);
-		_anim.SetFloat("Speed", GetComponent<Rigidbody>().velocity.magnitude);
+        _anim.SetFloat("Speed", myRigid.velocity.magnitude);
 	}
 
 	void Wander()
@@ -101,14 +108,15 @@ public class Hunter : MonoBehaviour {
 			_wayPoint = toBear.normalized;
 			_wayPoint.y = 0;
 			transform.LookAt(transform.position + _wayPoint);
-			GetComponent<Rigidbody>().velocity = _wayPoint * speed;
+            myRigid.velocity = _wayPoint * speed;
 		}
 
 		
 	}
 	public LayerMask shootMask;
 	float fov = 20f;
-	bool LineOfSight (Transform target) {
+	bool LineOfSight (Transform target) 
+    {
 		
 		Vector3 toTarget = GameObject.Find("Spine2").transform.position - transform.position;
 
@@ -136,7 +144,7 @@ public class Hunter : MonoBehaviour {
 		    }
 		   
 		}
-		//print(hitPlayer + " " + hitCover);
+        print(hitPlayer + "player   " + hitCover + "cover   ");
 		if(hitCover)
 			return false;
 
@@ -155,12 +163,13 @@ public class Hunter : MonoBehaviour {
 		iTween.FadeFrom(firingArc, 0, aimTime);
 
 		yield return new WaitForSeconds(aimTime);
-		
-		GetComponent<AudioSource>().Play();
+
+        shootSource.Play();
 		Destroy(Instantiate(gunParticle, particleTrans.position, particleTrans.rotation), 1f);
 		_anim.SetBool("Shoot", true);
 		if(LineOfSight(_player.transform) && _player.GetComponent<bearHealth>().health > 0)
 		{
+           
 			Vector3 toTarget = GameObject.Find("Spine2").transform.position - transform.position;
 			_player.GetComponent<bearHealth>().health = -1;
 			_player.GetComponent<DeathRagdoll>().ActivateRagdoll(toTarget.normalized*8000);
@@ -204,7 +213,7 @@ public class Hunter : MonoBehaviour {
 		if(objectHit.gameObject.layer == obstacleLayer && myState == HunterState.Wander)
 		{
 			Redirect();
-			GetComponent<Rigidbody>().velocity = _wayPoint * speed;
+            myRigid.velocity = _wayPoint * speed;
 		}
 		else if(objectHit.gameObject.layer == hermitLayer)
 		{
@@ -213,13 +222,4 @@ public class Hunter : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter(Collision collision){
-		
-	}
-
-	
-	void OnTriggerEnter(Collider other)
-	{
-
-	}
 }

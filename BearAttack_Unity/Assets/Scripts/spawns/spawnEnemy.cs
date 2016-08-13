@@ -24,9 +24,9 @@ public class spawnEnemy : MonoBehaviour {
 	{
 		//spawnLimit = GameObject.FindGameObjectsWithTag("Forest").Length;
 		
-		print ("hermit: " + hermitSpawnRate);
-		print ("logger: " + loggerSpawnRate);
-		print ("hunter: " + hunterSpawnRate);
+		//print ("hermit: " + hermitSpawnRate);
+		//print ("logger: " + loggerSpawnRate);
+		//print ("hunter: " + hunterSpawnRate);
 	}
 	
 	IEnumerator levelUp()

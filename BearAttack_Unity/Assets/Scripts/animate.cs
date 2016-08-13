@@ -45,16 +45,6 @@ public class animate : MonoBehaviour {
 
 			anim.SetFloat("Direction", Input.GetAxis("Horizontal"));
 		}
-
-		/*if(Input.GetKeyDown("o"))
-		{
-			StartCoroutine(PlayOneShot("attacking", 0, 1f));
-		}
-
-		if(Input.GetKeyDown("p"))
-		{
-			StartCoroutine(PlayOneShot("pooping", 0, 1f));
-		}*/
 	}
 	
 	public void playAnim(string paramName, float waitTime, float animSpeed)

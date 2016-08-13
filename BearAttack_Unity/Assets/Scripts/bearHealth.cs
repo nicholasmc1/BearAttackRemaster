@@ -29,7 +29,7 @@ public class bearHealth : MonoBehaviour
 	public float healthScale2;
 	public float shitScale;
 	
-	void FixedUpdate()
+	void FixedUpdate() //why is this on the physics steps?
 	{
 		if(died)
 			return;

@@ -10,24 +10,22 @@ AvatarMask:
   m_Elements:
   - m_Path: 
     m_Weight: 1
-  - m_Path: Bear
-    m_Weight: 1
   - m_Path: Hip
     m_Weight: 1
   - m_Path: Hip/Rear_Pelvis_L
     m_Weight: 1
   - m_Path: Hip/Rear_Pelvis_L/Rear_UpperLeg_L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Rear_Pelvis_L/Rear_UpperLeg_L/Rear_LowerLeg_L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Rear_Pelvis_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Rear_Pelvis_R/Rear_UpperLeg_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Rear_Pelvis_R/Rear_UpperLeg_R/Rear_LowerLeg_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2
     m_Weight: 1
   - m_Path: Hip/Spine1/Spine2/Chest
@@ -35,20 +33,22 @@ AvatarMask:
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L
     m_Weight: 1
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L/Front_UpperLeg_L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_L/Front_UpperLeg_L/Front_LowerLeg_L
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R/Front_UpperLeg_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Front_Pelvis_R/Front_UpperLeg_R/Front_LowerLeg_R
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Neck
-    m_Weight: 1
+    m_Weight: 0
   - m_Path: Hip/Spine1/Spine2/Chest/Neck/Head
     m_Weight: 1
   - m_Path: Hip/Spine1/Spine2/Chest/Neck/Jaw
     m_Weight: 1
   - m_Path: Hip/Spine1/Spine2/Chest/Neck/Jaw/Mouth
+    m_Weight: 1
+  - m_Path: mesh_Bear
     m_Weight: 1

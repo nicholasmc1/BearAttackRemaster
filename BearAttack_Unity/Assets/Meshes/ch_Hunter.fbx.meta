@@ -54,7 +54,13 @@ ModelImporter:
     400044: UpperLeg_L
     400046: UpperLeg_R
     4300000: Hunter
-    7400000: Take 001
+    7400000: anim_HunterIdle
+    7400002: anm_HunterWalk
+    7400004: anim_HunterRun
+    7400006: anim_HunterKneel
+    7400008: anim_HunterKneelStance
+    7400010: anim_HunterShoot
+    7400012: anim_HunterStandup
     9500000: //RootNode
     13700000: Hunter
   materials:
@@ -77,7 +83,463 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: anm_HunterWalk
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 35
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_HunterRun
+      takeName: Take 001
+      firstFrame: 55
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_HunterKneel
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 105
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_HunterKneelStance
+      takeName: Take 001
+      firstFrame: 105
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_HunterShoot
+      takeName: Take 001
+      firstFrame: 118
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: anim_HunterStandup
+      takeName: Take 001
+      firstFrame: 130
+      lastFrame: 135
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Pelvis_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L
+        weight: 1
+      - path: Hip/Pelvis_L/UpperLeg_L/LowerLeg_L
+        weight: 1
+      - path: Hip/Pelvis_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R
+        weight: 1
+      - path: Hip/Pelvis_R/UpperLeg_R/LowerLeg_R
+        weight: 1
+      - path: Hip/Spine1
+        weight: 1
+      - path: Hip/Spine1/Spine2
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Neck/Head
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_L/UpperArm_L/LowerArm_L/Hand_L
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Dummy/Gun
+        weight: 1
+      - path: Hip/Spine1/Spine2/Chest/Shoulder_R/UpperArm_R/LowerArm_R/Hand_R
+        weight: 1
+      - path: Hunter
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
