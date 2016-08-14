@@ -1,22 +1,17 @@
 using UnityEngine;
 using System.Collections;
 
-public class ForestedAreaTrigger : MonoBehaviour {
-	
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class ForestedAreaTrigger : MonoBehaviour
+{
+    private moveChar player;
+    void Awake()
+    {
+        player = GameObject.Find("Player").GetComponent<moveChar>();
+    }
 
 	void OnTriggerStay(Collider other)
 	{
-		if(other.gameObject.tag == "Player")
-		{
-			GameObject.Find("Player").GetComponent<moveChar>().EndSlowdown();
-		}
+		if(other.gameObject.layer == 13)
+			player.EndSlowdown();
 	}
 }

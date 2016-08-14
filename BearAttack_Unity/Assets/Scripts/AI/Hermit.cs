@@ -31,6 +31,8 @@ public class Hermit : MonoBehaviour {
 	public float hustleTime = 10f;
 	public float _hustleTimer = 0;
 
+    private Rigidbody myBody;
+
 	// Use this for initialization
 	void Start () {
 		_player = GameObject.Find("Player");
@@ -43,6 +45,8 @@ public class Hermit : MonoBehaviour {
 		_flockObject = GameObject.Find("HermitFlock");
 
 		StartCoroutine(TempFlock());
+
+        myBody = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
@@ -62,7 +66,7 @@ public class Hermit : MonoBehaviour {
 				//FindTreeToProtect();
 				Wander();
 				FindLoggerToChase();
-				GetComponent<Rigidbody>().velocity = _wayPoint * speed/3f;
+                myBody.velocity = _wayPoint * speed / 3f;
 				break;
 
 			case HermitState.ProtectTree:
@@ -147,7 +151,7 @@ public class Hermit : MonoBehaviour {
 
 		Vector3 toLogger = _loggerToChase.transform.position - transform.position;
 		_wayPoint = (toLogger).normalized;
-		GetComponent<Rigidbody>().velocity = _wayPoint * speed;
+        myBody.velocity = _wayPoint * speed;
 
 		if(toLogger.magnitude <= 3f)
 		{
@@ -175,7 +179,7 @@ public class Hermit : MonoBehaviour {
 			_treeToProtect = null;
 			myState = HermitState.Wander;
 
-			GetComponent<Rigidbody>().velocity = _wayPoint * speed;
+            myBody.velocity = _wayPoint * speed;
 		}
 
 		
@@ -245,7 +249,7 @@ public class Hermit : MonoBehaviour {
 		if(objectHit.gameObject.layer == layerNumber && myState != HermitState.ProtectTree)
 		{
 			Redirect();
-			GetComponent<Rigidbody>().velocity = _wayPoint * speed;
+            myBody.velocity = _wayPoint * speed;
 		}
 		else if(objectHit.gameObject.layer == loggerLayer)
 		{
@@ -255,10 +259,6 @@ public class Hermit : MonoBehaviour {
 		}
 	}
 	
-	void OnTriggerEnter(Collider other)
-	{
-
-	}
 
 
 }
