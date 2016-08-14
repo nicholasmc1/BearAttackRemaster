@@ -42,7 +42,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 65: {fileID: 6500000}
   - 114: {fileID: 11400000}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ShitTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

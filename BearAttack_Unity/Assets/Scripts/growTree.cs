@@ -9,12 +9,9 @@ public class growTree : MonoBehaviour {
 	{
 		if(col.transform.tag == "Shit")
 		{
-			if(col.GetComponent<Rigidbody>().velocity.magnitude < 1f)
-			{
-				Instantiate(forestPrefab, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity);
-				Destroy(col.gameObject);
-				Destroy(transform.parent.gameObject);
-			}
+			Instantiate(forestPrefab, new Vector3(transform.position.x, 0, transform.position.z), Quaternion.identity);
+			Destroy(col.gameObject);
+			Destroy(transform.parent.gameObject);
 		}
 	}
 	
