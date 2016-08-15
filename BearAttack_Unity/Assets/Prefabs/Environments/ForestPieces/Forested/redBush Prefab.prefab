@@ -124,7 +124,7 @@ Transform:
   m_Children:
   - {fileID: 400000}
   m_Father: {fileID: 400008}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &400008
 Transform:
   m_ObjectHideFlags: 1
@@ -136,6 +136,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 4000012550958536}
   - {fileID: 400050}
   - {fileID: 400136}
   - {fileID: 400002}
@@ -169,7 +170,7 @@ Transform:
   - {fileID: 4000011603666036}
   - {fileID: 400048}
   m_Father: {fileID: 400008}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!4 &400136
 Transform:
   m_ObjectHideFlags: 1
@@ -182,7 +183,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 400008}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!23 &2300000
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -326,6 +327,23 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 100008}
   m_IsPrefabParent: 1
+--- !u!1 &1000011647893168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 4000012550958536}
+  - 65: {fileID: 65000010668405258}
+  - 114: {fileID: 114000011982771796}
+  m_Layer: 0
+  m_Name: ForestTrigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
 --- !u!1 &1000012735336046
 GameObject:
   m_ObjectHideFlags: 1
@@ -373,6 +391,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 400050}
   m_RootOrder: 1
+--- !u!4 &4000012550958536
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011647893168}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 0
 --- !u!4 &4000012805793974
 Transform:
   m_ObjectHideFlags: 1
@@ -458,3 +489,28 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012735336046}
   m_Mesh: {fileID: 4300040, guid: a8789141b3c071148a76b95db0637ad8, type: 3}
+--- !u!65 &65000010668405258
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011647893168}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10, y: 3, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114000011982771796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011647893168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710450dd9c5b3034d9d7ca6c7500b61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassParticle: {fileID: 1000013449962112, guid: a304d380f849aba4a9e3adba03d878a4,
+    type: 2}

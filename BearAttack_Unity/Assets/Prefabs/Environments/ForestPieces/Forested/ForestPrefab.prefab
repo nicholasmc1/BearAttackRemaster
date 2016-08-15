@@ -271,6 +271,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710450dd9c5b3034d9d7ca6c7500b61e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grassParticle: {fileID: 1000013449962112, guid: a304d380f849aba4a9e3adba03d878a4,
+    type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

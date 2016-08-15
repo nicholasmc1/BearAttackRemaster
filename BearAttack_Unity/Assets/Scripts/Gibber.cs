@@ -9,16 +9,16 @@ public class Gibber : MonoBehaviour
     private AudioSource _slowMoSource;
     public GameObject Gibs;
     public bool isHunter;
+    private GameObject soundContainer;
     void Awake()
     {
-       _killSource =  gameObject.AddComponent<AudioSource>();
+       soundContainer = new GameObject();
+       _killSource = soundContainer.AddComponent<AudioSource>();
        _killSource.clip = KillSound;
-       _killSource.spatialBlend = 1;
        if (isHunter)
        {
-           _slowMoSource = gameObject.AddComponent<AudioSource>();
+           _slowMoSource = soundContainer.AddComponent<AudioSource>();
            _slowMoSource.clip = slowMoSound;
-           _slowMoSource.spatialBlend = 1;
        }
     }
 
@@ -32,7 +32,8 @@ public class Gibber : MonoBehaviour
 
         foreach (Transform child in temp.transform)
             child.GetComponent<Rigidbody>().AddForce(_velocity * 100);
-
+        soundContainer.transform.parent = null;
+        Destroy(soundContainer, 5);
         Destroy(gameObject);
 
     }

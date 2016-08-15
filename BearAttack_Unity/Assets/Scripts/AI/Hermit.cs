@@ -33,6 +33,9 @@ public class Hermit : MonoBehaviour {
 
     private Rigidbody myBody;
 
+    //audio
+    private AudioSource hermitVoice;
+    public AudioClip hermitSound;
 	// Use this for initialization
 	void Start () {
 		_player = GameObject.Find("Player");
@@ -47,6 +50,10 @@ public class Hermit : MonoBehaviour {
 		StartCoroutine(TempFlock());
 
         myBody = GetComponent<Rigidbody>();
+        hermitVoice = gameObject.AddComponent<AudioSource>();
+        hermitVoice.spatialBlend = 1;
+        hermitVoice.volume = 0.3f;
+        hermitVoice.clip = hermitSound;
 	}
 	
 	// Update is called once per frame
@@ -118,7 +125,7 @@ public class Hermit : MonoBehaviour {
 			Redirect();
 		}
 
-		GetComponent<AudioSource>().Stop();
+		hermitVoice.Stop();
 	}
 
 
@@ -145,9 +152,9 @@ public class Hermit : MonoBehaviour {
 			myState = HermitState.Wander;
 			return;
 		}
-		
-		if(!GetComponent<AudioSource>().isPlaying)
-			GetComponent<AudioSource>().Play();
+
+        if (!hermitVoice.isPlaying)
+            hermitVoice.Play();
 
 		Vector3 toLogger = _loggerToChase.transform.position - transform.position;
 		_wayPoint = (toLogger).normalized;

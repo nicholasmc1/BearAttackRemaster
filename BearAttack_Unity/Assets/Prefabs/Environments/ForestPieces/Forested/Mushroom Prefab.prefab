@@ -58,6 +58,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400018}
   - 65: {fileID: 6500002}
+  - 114: {fileID: 114000011805894320}
   m_Layer: 0
   m_Name: ForestTrigger
   m_TagString: Untagged
@@ -575,3 +576,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000013592071972}
   m_Mesh: {fileID: 4300002, guid: 233af771b0726354a9c064685270f016, type: 3}
+--- !u!114 &114000011805894320
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 710450dd9c5b3034d9d7ca6c7500b61e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grassParticle: {fileID: 1000013449962112, guid: a304d380f849aba4a9e3adba03d878a4,
+    type: 2}
