@@ -1,6 +1,6 @@
 //WOW CAMERA BY http://forum.unity3d.com/members/6169-Paintbrush
     
-    var target : Transform;
+    private var target : Transform;
      
     var targetHeight = 2.0;
     var distance = 5.0;
@@ -25,7 +25,10 @@
      
     @script AddComponentMenu("Camera-Control/WoW Camera")
      
-    function Start () {
+    function Start () 
+    {
+        target = transform.parent;
+        transform.parent = null;
     	PlayerPrefs.SetInt("camControl", 1);
         var angles = transform.eulerAngles;
         x = angles.y;
