@@ -26,7 +26,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.447648, y: -0.5, z: 0.88150835}
+  m_LocalPosition: {x: -21.88, y: -0.5, z: -18.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -76,7 +76,7 @@ MonoBehaviour:
   fleeRadius: 10
   treeDetectRadius: 5
   windUpTime: 3
-  deforestPrefab: {fileID: 100004, guid: 60a21a6712f19464e92323389b9e94c5, type: 2}
+  deforestPrefab: {fileID: 100000, guid: 35eca69ba1ea92345a890a1182886740, type: 2}
   deforestSound: {fileID: 8300000, guid: 80f8323fc3fb6d04aabe23e96d4bb8f8, type: 3}
 --- !u!1001 &100100000
 Prefab:

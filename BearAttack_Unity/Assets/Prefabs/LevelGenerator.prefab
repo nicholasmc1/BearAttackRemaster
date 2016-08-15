@@ -51,8 +51,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bf633c1ed6192442b6ef169dbca1374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deforestPrefab: {fileID: 100000, guid: 35eca69ba1ea92345a890a1182886740, type: 2}
-  forestPrefab: {fileID: 100000, guid: 3e4c535c6a5b7234ab8e551462b7b43a, type: 2}
-  groundPrefab: {fileID: 100000, guid: 84b460bf78ad5df4283609133cafdb4b, type: 2}
-  deforestGroundPrefab: {fileID: 100004, guid: 60a21a6712f19464e92323389b9e94c5, type: 2}
+  forestPrefabs:
+  - {fileID: 100000, guid: 3e4c535c6a5b7234ab8e551462b7b43a, type: 2}
+  - {fileID: 1000011018542468, guid: 1af9002dc1f80c5489afc39f03c22d8d, type: 2}
+  - {fileID: 100020, guid: 509e23c0a19b96048a917dbd052ccb4c, type: 2}
+  - {fileID: 100008, guid: a47926673a886744ba38355c376b3a54, type: 2}
+  deforestGroundPrefab: {fileID: 100000, guid: 35eca69ba1ea92345a890a1182886740, type: 2}
   forestEdgePrefab: {fileID: 100008, guid: ad35f8e01437f564ab7d96cfcc175083, type: 2}
